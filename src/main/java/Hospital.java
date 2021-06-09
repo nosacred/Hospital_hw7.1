@@ -33,7 +33,7 @@ public class Hospital {
         int healthyCount=0;
         MathContext context2 = new MathContext(3, RoundingMode.HALF_UP);
         for (float i : temperatureData){
-            if(i <=36.9 && i >=36.2) healthyCount++;
+            if(i <=36.9f && i >=36.2f) healthyCount++;
             totalTemp += i;
         }
         for(int i=0; i <temperatureData.length; i++){
